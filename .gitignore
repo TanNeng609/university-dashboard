@@ -1,0 +1,19 @@
+# Ignore React dependencies
+frontend/node_modules/
+
+# Ignore Python Virtual Environment & Cache
+Scripts/
+Include/
+Lib/
+__pycache__/
+
+# Ignore local database (we will make a new one in the cloud later)
+*.db
+
+# --- NEW: Ignore Large Media & Build Files ---
+*.mp3
+*.wav
+*.mp4
+*.exe
+build/
+dist/
