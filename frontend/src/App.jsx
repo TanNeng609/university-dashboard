@@ -14,7 +14,7 @@ function App() {
     console.log("Fetching data from Python Backend...");
     
     // We ping the Python server we built earlier!
-    fetch('http://127.0.0.1:5000/api/students')
+    fetch('https://university-dashboard-kzav.onrender.com/api/students')
       .then(response => response.json()) // Turn the raw network data into JSON
       .then(data => {
         console.log("Data received:", data);
@@ -28,7 +28,7 @@ function App() {
 
     const newStudentData={name:name,course:course,gpa:parseFloat(gpa)};
 
-    fetch('http://127.0.0.1:5000/api/students',{
+    fetch('https://university-dashboard-kzav.onrender.com/api/students',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(newStudentData)
